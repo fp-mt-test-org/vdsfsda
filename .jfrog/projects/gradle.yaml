@@ -1,0 +1,10 @@
+version: 1
+type: gradle
+resolver:
+  repo: mvn
+  serverId: artifactory
+deployer:
+  repo: vdsfsda-mvn-sandbox-local
+  serverId: artifactory
+  artifactPattern: '[organization]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]'
+useWrapper: true
